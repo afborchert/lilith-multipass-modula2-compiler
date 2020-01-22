@@ -31,6 +31,6 @@ The script _mc_ allows to compile Modula-2 sources using this
 compiler, running on the Lilith emulator, into M-Code which
 can likewise be linked using mcl and run on the Lilith emulator.
 
-See http://www.mathematik.uni-ulm.de/modula/history/ for more infos.
+See https://github.com/afborchert/lilith for more infos.
 
 Andreas F. Borchert
