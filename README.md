@@ -5,9 +5,9 @@ was developed by a team consisting of Leo Geissmann, Christian Jacobi,
 Urs Ammann, Svend Erik Knudsen, and others under the direction of
 Niklaus Wirth at the
 
-   Institut für Informatik
-   ETH-Zürich
-   CH-8092 Zürich
+Institut für Informatik
+ETH-Zürich
+CH-8092 Zürich
 
 These are, however, not the original sources as shipped by ETH Zürich
 (unfortunately, no machine-readable copy of them survived at our site)
