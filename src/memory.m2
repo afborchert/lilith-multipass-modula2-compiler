@@ -1,0 +1,3 @@
+IMPLEMENTATION MODULE MemoryFiles;
+
+END MemoryFiles.

@@ -1,0 +1,25 @@
+These sources were developed by a team consisting of Leo Geissmann,
+Christian Jacobi, Urs Ammann, Svend Erik Knudsen, and others under the
+direction of Niklaus Wirth at the
+
+   Institut für Informatik,
+   ETH-Zürich
+   CH-8092 Zürich
+
+They were licensed to Ulm University in 1983 using the attached license
+agreement (see file "License-Agreement"). Section 1.4 of this license
+allows us to distribute the sources including our changes to third
+parties under a sublicense, i.e. you are bound to the very same license
+agreement if you download and use these sources.
+
+The attached sources (subdirectory "src") were derived from the Modula-2
+Multi-Pass Compiler version C18 as of 1981. Some minor changes were done
+by me, Andreas F. Borchert, to adapt the compiler to my self-developed
+Lilith emulator and its UNIX environment. These changes are put under
+the very same license agreement.
+
+There is no handling charge for this package. Please note that I make
+this available as a historic document. There is no warranty for this
+program, to the extent permitted by applicable law.
+
+Andreas F. Borchert, Ulm University

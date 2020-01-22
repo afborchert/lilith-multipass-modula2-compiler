@@ -1,0 +1,50 @@
+opt=
+file=
+ext=
+rext=
+result=
+tmp="/tmp/mtm$$"
+lflag=
+for i
+do
+	case $i in
+	-l)	opt="$opt/list"
+		lflag=1 ;;
+	-*)	echo "Usage mc [-l] file"
+		exit ;;
+	*.m2)	file=$i
+		rext=".o"
+		ext=m2 ;;
+	*.d)	file=$i
+		rext=".sy"
+		ext=d ;;
+	*)	echo "filename must end in `.m2' or `.d'"
+		exit ;;
+	esac
+done
+if test $1 ; then
+	result=`basename $file .$ext`$rext
+	if test -r $result ; then
+		mv $result $tmp
+	fi
+	lilith -h 90 -s 20 C18.Base <<!
+$file$opt
+!
+	if test -r $result ; then
+		if test -r $tmp ; then
+			rm $tmp
+		fi
+		rm -f TMP.*
+		exit 0
+	else
+		if test -r $tmp ; then
+			mv $tmp $result
+		fi
+		exit 1
+	fi
+fi
+trap "stty echo -cbreak; exit" 2 3
+stty -echo cbreak
+lilith -h 90 -s 20 C18.Base
+stty echo -cbreak
+rm -f TMP.*
